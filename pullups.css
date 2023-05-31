@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+  }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.heading{
+  width: 100%;
+  height: 100px;
+  border-bottom: 3px solid ;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background:#224E52
+}
+.logo{
+  display: flex;
+  align-items:center;
+}
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+.heading .logo h2{
+  color:#FF3535;
+  font-size:25px;
+  letter-spacing: 2px;
+  font-weight:600;
+  padding-left:10px;
+ 
+}
+.nav-links ul  li {
+  display:inline;
+  padding: 10px 20px;
+  
+}
+.nav-links li i{
+  display: none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+.datalist{
+  width: 25%;
+  height:60px;
+  background:white;
+  border-radius: 10px;
+  
+  margin-right:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.datalist input[type="text"]{
+  width: 80%;
+  height:100%;
+  border: 0px;
+  outline:0px;
+  border-radius: 10px;
+}
+.datalist input::placeholder{
+padding-left: 13px;
+}
+.datalist datalist{
+  background:tranaparent;
+  margin-left: 50px;
+}
+.datalist img{
+  width:40px;
+  height:40px;
+  padding-right:5px;
+}
+.humburger{
+  color: white;
+  display: none;
+  font-size: 0px;
+}
+/* Pullupa-title section--------*/
+.pullups-title{
+  width:95%;
+  height:auto;
+  background:whitesmoke;
+  margin:auto;
+  margin-top:100px;
+}
+.pullups-title h1{
+  padding-top:50px;
+  font-size:45px;
+text-align:center;
+}
+.paragraph{
+  width:100%;
+  height:auto;
+  background:whitesmoke;
+  margin-bottom:10px;
+}
+.paragraph img:first-child{
+  width:100%;
+  height:400px;
+  margin-top:25px;
+  margin:auto;
+}
+.paragraph p{
+  margin-top:40px;
+  padding:10px 20px;
+  line-height:30px;
+  font-size:18px;
+}
+.paragraph b{
+  font-size:20px;
+}
+.images{
+  width:100%;
+  height:300px;
+}
+
+#accordian{
+  margin:300px 0px 20px 60px;
+  font-size:45px;
+  
+}
+.faq{
+  width:90%;
+  height:auto;
+  background:whitesmoke;
+  margin:auto;
+  margin-bottom:20px;
+}
+.question{
+  width:100%;
+  height:40px;
+  display:flex;
+  align-items: center;
+  justify-content:space-between; 
+}
+.question h3 {
+  margin-left:15px;
+  font-size:20px;
+  margin-top:20px;
+}
+.icon{
+  margin-right:20px;
+  font-size:25px;
+  transition: transform 0.4s ease;
+  
+}
+.icon.active{
+  transform:rotate(180deg);
+}
+.answer{
+  width:100%;
+  max-height:0;
+  background:whitesmoke;
+  margin-top: 20px;
+  overflow:hidden;
+  transition: max-height 0.4s ease
+}
+.answer p{
+  padding:10px 20px;
+  font-size:20px;
+}
+.footer{
+  width: 100%;
+  height:auto;
+  background: black;
+  margin-top:200px;
+}
+.footer img{
+  width:200px;
+  height:200px;
+}
+.footer h2{
+  font-size: 35px;
+  color: white;
+}
+.footer-body{
+  width: 100%;
+  height:29vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+/*----Footer-useful-links-------*/
+.footer-part{
+  width:27%;
+  height:10vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.footer-part h3 {
+  color:white;
+  margin-left:15px;
+}
+.footer-part ul li {
+  margin-top:15px;
+  font-size:20px;
+  color:white;
+  list-style: none;
+}
+.footer-part a{
+ color:white;
+ text-decoration: none;
+ transition:color 0.3s ease;
+}
+.footer-part a:hover{
+  color:royalblue;
+  
+}
+/*----Footer-folloe-section-----*/
+.follow{
+  display:flex;
+  justify-content: space-around;
+  width:34%;
+  height:10vh;
+}
+
+.follow ul li{
+  display:inline;
+  padding-left:25px;
+}
+.follow i {
+  color:#FF3535;
+  font-size:30px;
+}
+/*------Footer address section--*/
+.address{
+  margin-top:-50px;
+}
+.address h3{
+  margin-right:70px;
+}
+.address p  address{
+  font-size:15px;
+}
