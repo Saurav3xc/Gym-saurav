@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+  }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.hero{
+  width:100%;
+  height: 70vh;
+  background:linear-gradient(to left, rgba(23,23,23,0.5),rgba(23,23,23,0.8)),url('hero.jpeg');
+  background-position:center;
+background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: relative;
+}
+.heading{
+  width: 100%;
+  height: 100px;
+ border-bottom: 4px solid #FF3535;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+ .heading .logo img{
+  width: 100px;
+  height: 100px;
+}
+.heading .logo h2{
+  color:#FF3535;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight:700;
+  padding-left:10px;
+  margin-top:6px;
+}
+.nav-links ul  li {
+  display:inline;
+  padding: 15px 15px;
+  
+  
+}
+.nav-links li i{
+  color:white;
+  display:none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  transition:color 0.4s ease;
+}
+.nav-links a:hover{
+  color:#FF3535;
+}
+.datalist{
+  width: 25%;
+  height:50px;
+  background:white;
+  border-radius: 10px;
+  
+  margin-right:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.datalist input[type="text"]{
+  width: 80%;
+  height:100%;
+  border: 0px;
+  outline:0px;
+  border-radius: 10px;
+}
+.datalist input::placeholder{
+padding-left: 13px;
+}
+.datalist datalist{
+  background:tranaparent;
+  margin-left: 50px;
+}
+.datalist img{
+  width:30px;
+  height:30px;
+  margin-right:10px;
+}
+.humburger{
+  color:white;
+ display:none;
+ font-size: 0px;
+}
+.main-hero{
+  width:90%;
+  height:auto;
+  position:absolute;
+  top:50%;
+}
+.main-hero h1 ,h2{
+  color:white;
+   text-align:center;
+   font-size:60px;
+   letter-spacing: 8px;
+   margin-top:-40px;
+}
+.main-hero h1 span ,h2 span  {
+  color:red;
+  font-size:100px;
+  font-weight:700;
+}
+
+.main-hero a{
+  background:#FF3535;
+  color:white;
+  padding:15px 45px;
+  position:absolute;
+  left:42%;
+   margin-top:20px;
+   border-radius:10px;
+   text-decoration: none;
+   font-size:25px;
+   box-shadow:10px 5px 10px rgba(255, 255, 255, 0.37);
+   z-index:1;
+   cursor:pointer;
+}
+.main-hero a:hover{
+  color:black;
+}
+.main-hero a::after{
+  content:"";
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:0%;
+  height:100%;
+  border-radius:10px;
+  background:white;
+  z-index:-1;
+  transition: width 0.3s ease;
+}
+.main-hero a:hover::after{
+  content:"";
+  width:100%;
+  color:white;
+}
+/*------Trainer -section--------*/
+
+.trainer-title{
+  width:100%;
+  height:auto;
+ 
+  margin-top:100px;
+  
+  
+}
+.trainer-title h1{
+  color: black;
+  font-size:70px;
+  text-align:center;
+  padding-top:50px;
+  display: block;
+}
+.trainer-title p{
+  text-align:center;
+  font-size: 35px;
+  font-weight:600;
+  word-spacing:5px;
+  margin-bottom:50px;
+  color: black;
+}
+.trainer-back{
+  width: 100%;
+  height: 35vh;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.trainer{
+  width: 28%;
+  height: 27vh;
+  background: white;
+  border-radius: 9px;
+  transition: transform 0.3s ease;
+  
+}
+.trainer  a img{
+  width:100%;
+  height: 74%;
+  overflow: hidden;
+}
+.trainer:hover{
+  transform: scale(1.09);
+}
+.trainer-sub{
+  width: 100%;
+  height: 30%;
+  background: black;
+  border-radius:10px;
+}
+.trainer-sub h3{
+  color:white;
+  font-size:25px;
+  padding-top: 10px;
+  text-align: center;
+}
+.trainer-sub b{
+  color: white;
+  position: relative;
+  left: 25%;
+  padding-top: 6px;
+}
+.trainer-sub span{
+  color: white;
+  margin-left: 20px;
+}
+.trainer-sub  a i{
+  color: white;
+  font-size: 34px;
+  padding: 15px 20px;
+}
+.exercise-title {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+.exercise-title h1{
+  text-align:center;
+  font-size: 60px;
+}
+
+.exercises-body{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.exercise1,.exercise2{
+  width: 45%;
+  height: 20vh;
+  background: black;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out
+}
+.exercise1 a img, .exercise2 a img {
+  width: 100%;
+  height: 80%;
+  color: white;
+  text-decoration:none;
+  border-radius: 10px;
+}
+.exercise1 a ,.exercise2 a{
+  text-decoration: none;
+}
+.exercise1 p ,.exercise2 p{
+  color: white;
+  text-align: center;
+  
+  font-size: 22px;
+  padding-top: 10px
+}
+.exercise1:hover ,.exercise2:hover{
+  transform:scale(1.1);
+}
+#faq{
+  margin:100px 0px 15px 10%;
+  font-size: 40px;
+}
+.toggling{
+  width: 90%;
+  height:auto;
+  background: whitesmoke;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom:30px;
+}
+.question{
+  width: 100%;
+  height:auto;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  
+  
+}
+.question h3{
+  padding: 20px 20px;
+  font-size: 25px;
+}
+.icon{
+  
+  margin-right: 30px;
+  transition: transform 0.3s ease;
+}
+.icon.active
+{
+  transform:rotate(-180deg);
+}
+
+.answer{
+  width:100%;
+  max-height:0;
+  margin: auto;
+  overflow:hidden;
+   transition:max-height 0.5s ease;
+}
+.answer p{
+  padding:7px 15px 30px 15px;
+  font-size: 20px;
+}
+/*---------C0ntact-section----- */
+.contact-title{
+  width: 100%;
+  height: 40vh;
+  background: #FF3535;
+  margin-top: 200px;
+}
+.contact-title h1{
+  text-align: center;
+  font-size: 60px;
+  padding-top: 50px;
+  color:white;
+}
+.conatct-body{
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+iframe{
+  width: 35%;
+  height:26vh;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.contact{
+  width: 55%;
+  height:30vh;
+  display: inline-block;
+  margin-left: 70px;
+margin-top: -70px
+}
+
+.contact-place{
+  width: 100%;
+  height: 70px;
+  background: whitesmoke;
+  border-radius:10px;
+  margin-bottom: 40px;
+}
+.contact-place i{
+  color: #666;
+  font-size: 30px;
+  padding:20px 0px 0px 20px;
+}
+.contact-place input{
+  width: 85%;
+  height: 87%;
+  border: 0px;
+  outline: 0px;
+  background: whitesmoke;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.contact-place input::placeholder{
+  padding-left: 20px;
+  font-size: 20px;
+}
+.contact-places{
+  width:100%;
+  height: 100px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+.contact-places textarea{
+  width: 100%;
+  height: 100%;
+ font-size: 20px;
+}
+.contact-places textarea::placeholder{
+  padding:30px 25px;
+  font-size: 20px;
+}
+.contact-place button{
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size:30px;
+}
+/*-------Footer-section--------*/
+.footer{
+  width: 100%;
+  height: auto;
+  background: black;
+  margin-top:200px;
+}
+.footer img{
+  width:200px;
+  height:200px;
+}
+.footer h2{
+  font-size: 35px;}
+.footer-body{
+  width: 100%;
+  height:29vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+/*----Footer-useful-links-------*/
+.footer-part{
+  width:27%;
+  height:10vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.footer-part h3 {
+  color:white;
+  margin-left:15px;
+}
+.footer-part ul li {
+  margin-top:15px;
+  font-size:20px;
+  color:white;
+  list-style: none;
+}
+.footer-part a{
+ color:white;
+ text-decoration: none;
+ transition:color 0.3s ease;
+}
+.footer-part a:hover{
+  color:royalblue;
+  
+}
+/*----Footer-folloe-section-----*/
+.follow{
+  display:flex;
+  justify-content: space-around;
+  width:34%;
+  height:10vh;
+}
+
+.follow ul li{
+  display:inline;
+  padding-left:25px;
+}
+.follow i {
+  color:#FF3535;
+  font-size:30px;
+}
+/*------Footer address section-*/
+.address{
+  margin-top:-50px;
+}
+.address h3{
+  margin-right:70px;
+}
+.address p  address{
+  font-size:15px;
+}
